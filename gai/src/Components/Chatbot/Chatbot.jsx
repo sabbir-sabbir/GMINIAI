@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const Chatbot = () => {
-  const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBx-U00G1GntntB5CfuTArmHWl4Xq1KfpE";
+  const API_URL = import.meta.env.VITE_API_URL;
   
   const [inputData, setInputData] = useState("");
   const [answerData, setAnswerData] = useState("");
